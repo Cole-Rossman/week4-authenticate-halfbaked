@@ -16,14 +16,14 @@ const signUpPassword = document.getElementById('sign-up-password');
 
 signUpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    console.log(signUpEmail.value, signUpPassword.value);
+    console.log('sign up', signUpEmail.value, signUpPassword.value);
     await signupUser(signUpEmail.value, signUpPassword.value);
     redirectIfLoggedIn();
 });
 
 signInForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    console.log(signInEmail.value, signInPassword.value);
+    console.log('sign in', signInEmail.value, signInPassword.value);
     await signInUser(signInEmail.value, signInPassword.value);
     redirectIfLoggedIn();
 });
