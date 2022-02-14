@@ -12,7 +12,7 @@ const signUpPassword = document.getElementById('sign-up-password');
 // Redirect to /other-page on successful auth
 // Redirect to /other-page when page loads if user is authenticated
 
-// redirectIfLoggedIn();
+redirectIfLoggedIn();
 
 signUpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
